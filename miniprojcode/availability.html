@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venue Availability Checker</title>
+  <style>
+
+  body {
+    font-family: Arial, sans-serif;
+   
+    background-image: url('bg.jpg');
+    margin: 0;
+    
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+  
+  }
+
+  h1 {
+    color: #333;
+  }
+
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  select,
+  input{
+    padding:15px;
+   
+  
+    border-radius: 5px;
+  }
+ 
+
+
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .ava{
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: #F0D6ED;
+    padding:50px;
+  }
+  
+</style>
+
+ 
+</head>
+<body>
+  <div class="ava">
+  <h1>Venue Availability Checker</h1>
+  <br>
+
+ <h2><label for="venueSelect">Select a Venue:</label></h2>
+  <select id="venueSelect"></select>
+
+<h2><label for="dateInput">Select a Date:</label></h2>
+  <input type="date" id="dateInput">
+
+  <button onclick="checkAvailability()">Check Availability</button>
+
+  <p id="availabilityResult"></p>
+
+  <script>
+    // Sample venue data
+    const venues = [
+      { name: 'SKG kalyana Mandapam', availableDates: ['2023-11-15', '2023-11-20', '2023-11-25'] },
+      { name: 'CRA Covention Hall', availableDates: ['2023-11-18', '2023-11-22', '2023-11-28'] },
+      { name: 'Lavanya Mahal', availableDates: ['2023-11-15', '2023-11-20', '2023-11-25'] },
+      { name: 'GVR Marriage Hall', availableDates: ['2023-11-18', '2023-11-22', '2023-11-28'] },
+      { name: 'NDK kalyana mandira', availableDates: ['2023-11-15', '2023-11-20', '2023-11-25'] },
+      { name: 'Pearl Banquet Hall', availableDates: ['2023-11-18', '2023-11-22', '2023-11-28'] },
+      { name: 'Safina Banquet Hall', availableDates: ['2023-11-15', '2023-11-20', '2023-11-25'] },
+      { name: 'Jalsa Banquet Hall', availableDates: ['2023-11-18', '2023-11-22', '2023-11-28'] },
+      { name: 'GVR Marriage Hall', availableDates: ['2023-11-15', '2023-11-20', '2023-11-25'] },
+      { name: 'Venue B', availableDates: ['2023-11-18', '2023-11-22', '2023-11-28'] },
+      // Add more venues as needed
+    ];
+
+    // Populate venue select options
+    const venueSelect = document.getElementById('venueSelect');
+    venues.forEach(venue => {
+      const option = document.createElement('option');
+      option.text = venue.name;
+      venueSelect.add(option);
+    });
+
+    function checkAvailability() {
+      const selectedVenue = venueSelect.value;
+      const selectedDate = document.getElementById('dateInput').value;
+
+      if (!selectedVenue || !selectedDate) {
+        alert('Please select both a venue and a date.');
+        return;
+      }
+
+      const venue = venues.find(v => v.name === selectedVenue);
+
+      if (!venue) {
+        alert('Invalid venue selected.');
+        return;
+      }
+
+      const isAvailable = venue.availableDates.includes(selectedDate);
+      const resultElement = document.getElementById('availabilityResult');
+
+      if (isAvailable) {
+        resultElement.textContent = `The venue "${selectedVenue}" is available on ${selectedDate}.`;
+      } else {
+        resultElement.textContent = `Sorry, the venue "${selectedVenue}" is not available on ${selectedDate}.`;
+      }
+    }
+  </script>
+  </div>
+</body>
+</html>

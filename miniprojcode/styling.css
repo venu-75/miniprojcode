@@ -1,0 +1,80 @@
+/* Add these styles in your styles.css file */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.mobileview-width {
+    text-align: center;
+}
+
+.click-for-price {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.click-for-price:hover {
+    background-color: #0056b3;
+}
+
+.cpg-detail {
+    font-size: 16px;
+    color: #333;
+}
+
+.fa-money {
+    color: gold;
+}
+
+.hall-diet-symbol {
+    font-size: 32px;
+    color: green;
+}
+
+.veg-hall-symbol {
+    margin-top: -10px;
+}
+
+.img-responsive {
+    max-width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.rhc {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+/* Add this styling for the button in your styles.css file */
+
+.btn-book-hall {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-book-hall:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,48 @@
+
+body{
+	background-color:#5CF6F9;
+	
+	
+}
+h1{background-color:orange;
+color:black;
+text-align:center;
+font-weight:bold;
+}
+.navigation{
+	border:1px solid black;
+	height:50px;
+	display:flex;
+	align-items:center;
+	border-radius:40px;
+	background-color:orange;
+
+  
+
+}
+.navigation>a{
+	display:inline-block;
+	margin-right:20px;
+	margin-left:20px;
+	background-color:#0BE47E;
+	color:black;
+	text-decoration:none;
+	width:800px;
+	border:1px solid black;
+	height:35px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:40px;
+	font-weight:bold;
+}
+img{
+	padding:0px;
+	margin:2px;
+	margin-left:10px;
+	margin-right:8px;
+	border:3px solid black;
+}
+.form{
+	border:1px solid black;
+}

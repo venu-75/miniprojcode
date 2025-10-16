@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>venues list</title>
+ 
+   <link rel="stylesheet" type="text/css" href="style2.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<br>
+</br>
+
+<nav class="navigation">
+
+        <a href="index.html">HOME</a>
+        <a href="marriagehalls.html">VENUES LIST</a>
+		<a href="registration.php">REGISTRATION</a>
+		<a href="services.html">SERVICES</a>
+		<a href="availability.html">AVAILABILITY CHECKING</a>
+		
+ 
+		  </nav><br>
+		  
+		  
+		   <p><input type="text" class="search-bar" placeholder="Search for Venues" id="searchInput"></p>
+    <ul class="marriage-hall-list" id="hallList">
+
+<div>
+
+  <div class="container">
+ 
+    <h1>VENUES LIST</h1>
+	
+	<div class="list">
+	
+	<div style="width:100%;display:inline-block;">
+    <div style="width:50%;float:left">
+        <img src="http://34.120.136.253/manual/home_page/images/wedding_halls__a66a5cdd2e687c8b33fd96e028601792a8a8b981.webp" alt="Marriage Halls, Kalyan Mantapas" class=" ls-is-cached lazyloaded" src="http://34.120.136.253/manual/home_page/images/wedding_halls__a66a5cdd2e687c8b33fd96e028601792a8a8b981.webp"  style="margin:auto;display:block" />
+        <h4><span class="theme1">Marriage Halls</span></h4>
+    </div>
+    <div style="width:50%;float:left">
+	    <img src="http://34.120.136.253/manual/home_page/images/banquet_halls__2088fa8616f0b24fdd645b4c9e1d5006baadb072.webp" alt="Banquet Halls" class=" lazyloaded" src="http://34.120.136.253/manual/home_page/images/banquet_halls__2088fa8616f0b24fdd645b4c9e1d5006baadb072.webp">
+        <h4><span class="theme2">Banquet Halls</span></h4>
+        
+        
+    </div>
+</div>
+</div>
+	
+	
+
+					   
+
+  				
+	
+	
+	
+	
+	
+	<div class="hall1">
+	<p><img src="\miniprojcode\hallimages\hall1.jpg"  width=70%  height=500px></p>
+	<h2>SKG KALYANA MANDAPA, BANGALORE
+	<br></br>
+	<p><a href="skgvenue.html">click here to know more</a></h2></p>
+	</div>
+	
+    <div class="hall2">
+	<p><img src="\miniprojcode\hallimages\hall2.jpg" width=70%  height=500px></p>
+	<h2>C.R.A CONVENTION HALL, BANGALORE
+	<br></br>
+	<p><a href="cravenue.html">click here to know more</a></h2></p>
+	
+	</div>
+	
+	<div class="hall3">
+	<p><img src="\miniprojcode\hallimages\hall3.jpg" width=70%  height=500px></p>
+	<h2>NDK KALYANA MANDIRA
+	<br></br>
+	<p><a href="ndkvenue.html">click here to know more</a></h2></p>
+	</div>
+	
+	<div class="hall4">
+	<p><img src="\miniprojcode\hallimages\hall4.jpg" width=70%  height=500px></p>
+	<h2>LAVANYA MAHAL, HOSUR
+	<br></br>
+	<p><a href="lavanyavenue.html">click here to know more</a></h2></p>
+	</div>
+	
+	<div class="hall5">
+	<p><img src="\miniprojcode\hallimages\hall5.jpg" alt="marriage hall 5" width=70%  height=500px></p>
+	<h2>BHAVANI'S GRANDPALACE, HOSUR
+	<br></br>
+	<p><a href="bhavanivenue.html">click here to know more</a></h2></p>
+	</div>
+	
+	<div class="hall6">
+	<p><img src="\miniprojcode\hallimages\hall6.jpg" width=70%  height=500px></p>
+	<h2>GVR SOWBHAGYA MAHAL, THALLY
+	<br></br>
+	<p><a href="gvrvenue.html">click here to know more</a></h2></p>
+	</div>
+	
+	<div class="hall7">
+	<p><img src="\miniprojcode\hallimages\hall7.jpg" width=70%  height=500px></p>
+	<h2>SAFINA BANQUET, BANGALORE
+	<br></br>
+	<p><a href="banquetvenue1.html">click here to know more</a></h2></p>
+	</div>
+	
+	<div class="hall8">
+	<p><img src="\miniprojcode\hallimages\hall8.jpg" width=70%  height=500px></p>
+	<h2>JALSA BANQUET, BANGALORE
+	<br></br>
+	<p><a href="jalsavenue.html">click here to know more</a></h2></p>
+	</div>
+	
+	<div class="hall9">
+	<p><img src="\miniprojcode\hallimages\hall9.jpg" width=70%  height=500px></p>
+	<h2>PEARL BANQUET, BANGALORE
+	<br></br>
+	<p><a href="pearlvenue.html">click here to know more</a></h2></p>
+	</div>
+	
+
+	
+	
+	
+	
+
+ <script>
+  // Function to filter marriage halls based on search input
+  function filterHalls() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const marriageHalls = document.querySelectorAll('.marriage-hall-list > div');
+
+    marriageHalls.forEach(function(hall) {
+      const hallName = hall.querySelector('h2').textContent.toLowerCase();
+      if (hallName.includes(searchInput)) {
+        hall.style.display = 'block'; // Show matching halls
+      } else {
+        hall.style.display = 'none'; // Hide non-matching halls
+      }
+    });
+  }
+
+  // Add an event listener to the search input
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', filterHalls);
+ </script>
+
+
+
+</body>
+</html>

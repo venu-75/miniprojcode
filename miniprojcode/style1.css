@@ -1,0 +1,129 @@
+
+body{
+	background-color:#F0D6ED;
+	border:1px solid black;
+	
+}
+h1{background-color:rgb(18, 18, 85);
+color:white;
+text-align:center;
+font-weight:bold;
+}
+.navigation{
+	border:1px solid black;
+	height:50px;
+	display:flex;
+	align-items:center;
+	border-radius:2px;
+	background-color:rgb(18, 18, 85);
+
+  
+
+}
+.navigation>a{
+	display:inline-block;
+	margin-right:25px;
+	margin-left:25px;
+	background-color:rgb(238, 248, 42);
+	color:black;
+	text-decoration:none;
+	width:800px;
+	border:1px solid black;
+	height:35px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:40px;
+	font-weight:bold;
+}
+img{
+	padding:0px;
+	margin:2px;
+	margin-left:20px;
+	margin-right:8px;
+	border:1px solid black;
+}
+
+
+
+
+
+
+
+/* Add these styles to your CSS file */
+
+.mainhalls {
+    background-color: #f7f7f7;
+    padding: 20px;
+	border:1px solid black;
+	
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.theme1 {
+    color: #ff5722;
+	
+	
+}
+
+.theme2 {
+    color: #007bff;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.col-sm-6 {
+    min-width: 220px; /* Set a minimum width for the columns */
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.col-sm-6:last-child {
+    margin-right: 0;
+}
+
+.col-sm-6 h4 {
+    margin-top: 10px;
+}
+
+.col-sm-6 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.col-sm-6 a:hover {
+    color: #007bff;
+}
+
+.col-sm-6 img {
+    max-width: 100%;
+}
+
+.venues{
+	border:1px solid black;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.eve{
+	background-color:#F0D6ED;
+}
+
+

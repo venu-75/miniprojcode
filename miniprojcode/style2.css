@@ -1,0 +1,249 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F0D6ED;
+	  border:1px solid black;
+    }
+	h1,h3{
+		text-align:center;
+	color:white;
+border:1px solid black;
+padding:15px;	
+background-color:rgb(18, 18, 85);
+border-radius:5px;
+
+
+	}
+	
+	h4{
+		color:blue;
+		text-align:center;
+	}
+	.list{
+		border:1px solid black;
+		justify-content:center;
+		padding-top:20px;
+		background-color: #F0D6ED;
+		text-align:center;
+		
+	}
+	.head{
+		border:1px solid black;
+	
+		
+	}
+	
+	.navigation{
+		border:1px solid black;
+		height:50px;
+		display:flex;
+		align-items:center;
+		border-radius:2px;
+		background-color:rgb(18, 18, 85);
+	
+	  
+	
+	}
+	.navigation>a{
+		display:inline-block;
+		margin-right:25px;
+		margin-left:25px;
+		background-color:rgb(238, 248, 42);
+		color:black;
+		text-decoration:none;
+		width:250px;
+		border:1px solid black;
+		height:28px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		border-radius:40px;
+		font-weight:bold;
+	}
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+	  
+	  margin-right:15px;
+	  margin-left:5px;
+	  
+    }
+
+    .search-bar {
+      width: 95%;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    .marriage-hall-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .marriage-hall-item {
+      background-color: #f9f9f9;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+	}
+	  
+	 
+	.hall1 {
+		padding:3px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		margin-bottom:1px black;
+		
+	}
+	.hall1>img{
+
+		border:5px red;
+		margin:1px;
+	}
+h2{
+text-align:center;
+color:black;
+margin-top:3px;
+border:1px solid black;	
+border-bottom-width:2px;
+margin-left:3px;
+margin-right:3px;
+padding-top:25px;
+}
+
+
+.hall2 {
+		padding:3px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		margin-bottom:1px black;
+		padding-bottom:20px;
+		
+	}
+	.hall2>img{
+		border:5px white;
+		margin:1px;
+	}
+	
+	.hall3 {
+		padding:1px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall3>img{
+		border:1px white;
+		margin:1px;
+	}
+	
+	.hall4 {
+		padding:1px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall4>img{
+		border:1px white;
+		margin:1px;
+	}
+	
+	.hall5 {
+		padding:1px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall5>img{
+		border:1px white;
+		margin:1px;
+	}
+	
+	.hall6 {
+		padding:1px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall6>img{
+		border:1px white;
+		margin:1px;
+	}
+	
+	.hall7 {
+		padding:1px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall7>img{
+		border:1px white;
+		margin:1px;
+	}
+	
+	.hall8 {
+		padding:1px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall8>img{
+		border:1px white;
+		margin:1px;
+	}
+	
+	.hall9 {
+		padding:1px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall9>img{
+		border:1px white;
+		margin:1px;
+	}
+	
+	.hall10 {
+		padding:5px;
+		border:3px  white;
+		background-color:#F0D6ED;
+		
+	}
+	.hall10>img{
+		border:1px white;
+		margin:1px;
+	}
+	p{
+		text-align:center;
+		color:white;
+	}
+	
+	img{
+		border:2px solid black;
+	}
+	a{
+		text-decoration:none;
+		padding:5px;
+		border:1px solid black;
+		background-color: black;
+		
+	}
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+	
+	
+	

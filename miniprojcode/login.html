@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+	<body background="https://previews.123rf.com/images/kotenko/kotenko1403/kotenko140300008/26854631-snowy-winter-in-a-mountain-forest-sunny-cold-day-with-snow-covered-trees-carpathian-mountains-ukrain.jpg">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="POST" onsubmit="return redirectToNextPage();">
+            <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+    </div>
+
+    <script>
+        function redirectToNextPage() {
+            // Redirect to the next page when the form is submitted
+            window.location.href = 'index.html'; // Replace 'nextpage.html' with the desired page URL
+            return false; // Prevent the form from submitting
+        }
+    </script>
+</body>
+</html>

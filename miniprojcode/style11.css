@@ -1,0 +1,89 @@
+/* style2.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #DF9ED6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.marriage-hall-list {
+  list-style: none;
+  padding: 0;
+}
+
+.marriage-hall-list > div {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.marriage-hall-list > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.marriage-hall-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.marriage-hall-list h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.marriage-hall-list a {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.marriage-hall-list a:hover {
+  background-color: #0056b3;
+}
